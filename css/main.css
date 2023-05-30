@@ -5,11 +5,12 @@
   font-family: 'Dosis', sans-serif;
 }
 
+
 .nav-container {
   display: none;
 }
 
-.nav-container.active {
+.nav-container .active {
   display: block;
 }
 
@@ -25,6 +26,7 @@
 
 .navbar a {
   color: rgb(255, 255, 255);
+  text-decoration: none;
 }
 
 .navbar a:hover {
@@ -33,10 +35,10 @@
 
 .nav-list {
   list-style-type: none;
-  width: 100%;
+  /*width: 100%;
   text-align: center;
   padding-top: 10px;
-  display: none;
+  display: none;*/
 }
 
 .nav-list.active {
@@ -47,8 +49,8 @@
 }
 
 .nav-list .list-item {
-  display: block;
-  padding: 10px;
+  display: inline-block;
+    padding: 20px 10px;
 }
 
 .icon_nav {
@@ -158,6 +160,23 @@ footer p {
   padding: 20px;
   margin-bottom: 80px;
 }
+ p {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
 
 .imagen-dea {
   max-width: 80%;
@@ -323,7 +342,15 @@ align-items: center;
   margin-bottom: 2rem;
   text-align: justify;
 }
-
+.col3-prod { 
+  display: inline-block;
+   width: 45%; 
+   margin-bottom: 3rem; 
+   padding: 0 20px; 
+   vertical-align: top; 
+   text-align: left;
+   margin-top: 2rem;
+  }
 
 @media all and (max-width: 480px) {
   .navbar {
@@ -392,6 +419,9 @@ align-items: center;
   width: 45%; 
   margin-bottom: 0rem; 
   }
+  .col3-prod {
+    width: 100%;
+  }
 
 /* foother*/
 
@@ -424,6 +454,7 @@ footer label {
   .col-main img{
     width: 100%;
    }
+ 
 
 }
 
