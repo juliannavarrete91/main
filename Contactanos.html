@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="imagenes/favicon.ico" type="image/x-icon">
+    <title>Nexo Tecnologico</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <div class="container-icon" style="width: 100%;">
+                <a href="./index.html"><img class="icon_nav" src="./Imagenes/favicon.ico"></a>
+            </div>
+
+            <div class="nav-container">
+                <ul class="nav-list" id="navi-list">
+                    <li class="list-item"><a href="./index.html">Inicio</a></li>
+                    <li class="list-item"><a href="./Servicios.html">Servicios</a></li>
+                    <li class="list-item"><a href="./Donde_estamos.html">Donde estamos</a></li>
+                    <li class="list-item"><a href="./Contactanos.html">Contactanos</a></li>
+                </ul>
+            </div>
+    
+           <div class="menu" id="toggle-button">
+                <div class="menu_line"></div>
+                <div class="menu_line"></div>
+                <div class="menu_line"></div>
+            </div>
+        </nav>
+        <h1 class="Titulo1">Nexo Tecnologico</h1>
+    </header>
+
+    <main>
+        <div class="formulario">
+            <h1> FORMULARIO DE CONTACTO</h1>
+        <form action="nexotecnologico2023@gmail.com" method="post" enctype="text/plain" id="myForm">
+            <div class="col">
+            <label>Nombre Completo</label>
+          
+            <input type="text" name="nombre" size="30" maxlength="100"> 
+            <br>
+            <br>
+            <label> Motivo de su consulta </label>
+    
+            <select name="utilizacion">
+            <option value="1">Adquirir nuestros equipos</option>
+            <option value="2">Cursos y Capacitaciones</option>
+            <option value="3">Soporte Tecnico</option>
+            <option value="4">Trabajar con nosotros</option>
+            </select>
+          
+        </div>
+        <div class="col">
+           
+            <label> Email </label>
+            
+            <input type="email" name="email" size="25" maxlength="100" value="@">
+            <br>
+            <br>
+            <label> Tipo de Entidad</label>
+            <input type="radio" name="Entidad" value="Publica" checked> Publica
+            <br>
+            <input type="radio" name="Entidad" value="Privada"> Privada
+            <br>
+            <input type="radio" name="Entidad" value="Privada"> Particular
+           
+            
+        </div>
+        <div class="col2">
+            <label>Su consulta </label>
+            <textarea cols="30" rows="7" name="comentarios">Ingrese su consulta</textarea>
+            <br>
+            <br>
+            <input type="checkbox" name="recibir_info" checked> Deseo recibir notificación de las
+            novedades en las líneas de autobuses.
+            <br>
+            <br>
+           
+            <button type="submit">ENVIAR</button>
+            <button type="Reset">Limpiar Campos</button>
+            <br>
+            <br>
+         
+        </div>
+        </form>
+        </div>
+    </main>
+
+    <div class="wrapper">
+        <footer class="footer">
+            <div>
+                <label>Nuestros canales de comunicacion</label>
+                <ul class="social">
+                    <li><a href="https://www.facebook.com/nexotecnologico/"><img src="./Imagenes/favicon-facebook.ico" alt="Facebook"></a></li>
+                    <li><a href="https://twitter.com/nexotecno"><img src="./Imagenes/favicon-twitter.ico" alt="Twitter"></a></li>
+                    <li><a href="https://www.instagram.com/nexotecnologico/"><img src="./Imagenes/favicon-instagram.ico" alt=""></a></li>
+                    <li><a href="https://api.whatsapp.com/send/?phone=5491138405760"><img src="./Imagenes/favicon-whatsapp.ico" alt="Whatsapp"></a></li>
+                    <li><a href="https://www.youtube.com/@nexotecnologico"><img src="./Imagenes/favicon-youtube.ico" alt="Youtube"></a></li>
+                    
+                </ul>
+                <p> &copy; 2023 Nexo Tecnologico. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="./main.js"></script>
+</body>
+</html>
